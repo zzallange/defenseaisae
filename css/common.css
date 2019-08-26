@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+html,body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,input,form,fieldset,select,button {margin: 0; padding: 0;}
+
+ul,li,ol {list-style: none;}
+
+h1,h2,h3,h4,h5,h6 {font-weight: normal; font-style: normal; color: #fff;}
+em,strong {font-weight: normal; font-style: normal;}
+
+a {text-decoration: none; color: #fff;}
+p,span,em {color: #fff;}
+
+img {display: block; width: 100%; height:100%; border: 0 none; }
+
+body,div,a,h1,h2,h3,h4,h5,h6,h6,span,p {font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif;}
+img {border:none; vertical-align:top;}
+
+button {border: 0 none; cursor: pointer;background: none;}
+
+/* 국방포토 slider_slick */
+
+
+
+
+
+
+
+
+
