@@ -19,19 +19,28 @@
 .header .gnb .menu li:first-child a {color: #ada06b; }
 .header .gnb .menu li:first-child a .txt .line {width: 100%;}
 
+.header .search {right: 110px; bottom: 56px;}
+.header .search .inner {position: relative;background: blue;}
+
+.header .search .inner .btn_search {position: absolute; right: -3px; bottom: 5px;padding-right: 12px; display: block; width:20px; height: 20px; background: url(../img/sns_icon.png) no-repeat -128px -24px;}
+.header .search .inner .btn_search:after {content: ''; position: absolute; right: 0; bottom: 1px; display: block; width: 1px; height: 15px; background: #fff;}
+.header .search .inner .btn_searchon {position: absolute; right: -3px; bottom: 5px;padding-right: 12px; display: block; width:20px; height: 20px; background: url(../img/sns_icon.png) no-repeat -128px -56px;}
+.header .search .inner .btn_searchon:after {content: ''; position: absolute; right: 0; bottom: 1px; display: block; width: 1px; height: 15px; background: #fff;}
+
+.header .search .inner .in_sear {display: none; position: absolute; right: 37px;bottom: 0;width: 170px; background: #fff;}
+.header .search .inner .in_sear .t_wrap {float: left; display: inline-block; width: 140px; height: 25px;}
+.header .search .inner .in_sear .t_wrap input.txt {padding-left: 7px;width: 160px; height: 25px; line-height: 25px; font-size: 13px; color: #8a8b8d;}
+.header .search .inner .in_sear input.img{float: left; margin-top: 3px; width: 17px;height: 17px;}
+
 .header .sns {right: 0; bottom: 56px; }
 .header .sns .link {overflow: hidden;height: 28px;}
 .header .sns .link li {float: left; }
 .header .sns .link li a {padding: 5px; display: block;width: 17px; height: 17px;text-align: center; line-height: 17px; font-size: 17px;}
-
-.header .sns .link li:nth-child(1) a {padding-top: 4px;position: relative; padding-right: 9px;}
-.header .sns .link li:nth-child(1) a:after {content: ''; position: absolute; right: 0; top:8px; width: 1px; height: 15px; background: #fff;}
-.header .sns .link li:nth-child(2) a:hover .fa-facebook {color:#345b95;}
-.header .sns .link li:nth-child(3) a:hover .fa-twitter {color:#1dadeb;}
-
-.header .sns .link li:nth-child(4) a {margin: 6px 5px 0 5px;padding: 0; background: url(../img/sns_icon.png) no-repeat -24px -17px; color: transparent;}
-.header .sns .link li:nth-child(4):hover a { background: url(../img/sns_icon.png) no-repeat -103px -17px; }
-.header .sns .link li:nth-child(5) a {margin: 6px 5px 0 5px;padding: 0; background: url(../img/sns_icon.png) no-repeat 0px -17px; color: transparent;}
+.header .sns .link li:nth-child(1) a:hover .fa-facebook {color:#345b95;}
+.header .sns .link li:nth-child(2) a:hover .fa-twitter {color:#1dadeb;}
+.header .sns .link li:nth-child(3) a {margin: 6px 5px 0 5px;padding: 0; background: url(../img/sns_icon.png) no-repeat -24px -17px; color: transparent;}
+.header .sns .link li:nth-child(3):hover a { background: url(../img/sns_icon.png) no-repeat -103px -17px; }
+.header .sns .link li:nth-child(4) a {margin: 6px 5px 0 5px;padding: 0; background: url(../img/sns_icon.png) no-repeat 0px -17px; color: transparent;}
 
 /* Content_main */
 .main {overflow: hidden; height: 420px;}

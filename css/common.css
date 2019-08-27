@@ -16,6 +16,9 @@ body,div,a,h1,h2,h3,h4,h5,h6,h6,span,p {font-family:'Apple SD Gothic Neo','Malgu
 img {border:none; vertical-align:top;}
 
 button {border: 0 none; cursor: pointer;background: none;}
+fieldset {border: 0 none;}
+legend {width: 0; font-size: 0;}
+input {border: 0 none;}
 
 /* 국방포토 slider_slick */
 
