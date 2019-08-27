@@ -9,6 +9,13 @@ $(document).ready(function(){
         cssEase: 'linear'
     });
     
+    //주가지수_slider
+    $('.index').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
     
     //국방photo_slider
     $('.p_slick').slick({
