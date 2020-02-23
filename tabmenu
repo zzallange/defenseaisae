@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>탭메뉴 변경</title>
+    <style>
+        body{margin: 0;padding: 0;}
+        ul,li {list-style: none;}
+        .container {width: 800px; height: auto; margin: 180px auto; box-sizing: border-box;}
+        .menu {position: relative; width: 100%; border-top: 2px solid #348dff; box-sizing: border-box;}
+        .menu:after {content:'';display: block;clear: both; }
+        .menu > li{display: inline-block;float: left; width: 19.4%;}
+        .menu > li > a {display: inline-block; width: 100%; height: 50px; line-height: 55px; text-align: center; text-decoration: none;color:#348dff; font-size: 30px;}
+        .menu > li > a.active {background: #348dff;color: #fff;}
+        /* 2dep cont */
+        .menu > li .box {display: none;position: absolute; top: 50px; padding: 20px; box-sizing: border-box; background: #348dff;}
+        .menu > li .box.sub01 {/*left: 40px;*/}
+        .menu > li .box.sub02 {/*left: 187.5px;*/}
+        .menu > li .box.sub04 {}
+        .menu > li .box.sub05 {right: -54px;}
+        .menu > li .box.active {display: block;}
+        .menu > li .box:after {content:'';display: block;clear: both;}
+        .menu > li .box > li {float: left;}
+        .menu > li .box > li > a {font-size: 18px; color:#fff; }
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).on("click",'.menu >li >a',function(){
+            $(this).siblings('.box').toggleClass('active');
+            $(this).closest('li').siblings('li').find('.box').removeClass('active');
+            $(this).toggleClass('active');
+            $(this).closest('li').siblings('li').find('a').removeClass('active');
+            });
+            $('.menu').on('click','.menu>li>a',function(){
+                $('.menu >li> a.active').removeClass('active');
+                $(this).addClass('active');
+            });
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <ul class="menu">
+            <li>
+                <a href="#none">메뉴1번</a>
+                <ul class="box sub01">
+                    <li><a href="#none">서브1</a></li>
+                    <li><a href="#none">서브1</a></li>
+                    <li><a href="#none">서브1</a></li>
+                    <li><a href="#none">서브1</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#none">메뉴2번</a>
+                <ul class="box sub02">
+                    <li><a href="#none">서브2</a></li>
+                    <li><a href="#none">서브2</a></li>
+                    <li><a href="#none">서브2</a></li>
+                    <li><a href="#none">서브2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#none">메뉴3번</a>
+                <!--<ul class="box sub03">
+                    <li><a href="#none">서브3</a></li>
+                    <li><a href="#none">서브3</a></li>
+                    <li><a href="#none">서브3</a></li>
+                    <li><a href="#none">서브3</a></li>
+                </ul>-->
+            </li>
+            <li>
+                <a href="#none">메뉴4번</a>
+                <ul class="box sub04">
+                    <li><a href="#none">서브4</a></li>
+                    <li><a href="#none">서브4</a></li>
+                    <li><a href="#none">서브4</a></li>
+                    <li><a href="#none">서브4</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#none">메뉴5번</a>
+                <ul class="box sub05">
+                    <li><a href="#none">서브5</a></li>
+                    <li><a href="#none">서브5</a></li>
+                    <li><a href="#none">서브5</a></li>
+                    <li><a href="#none">서브5</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
